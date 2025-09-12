@@ -8,7 +8,12 @@ const remove = document.getElementById("remove");
 
 const newFoto = document.createElement("img");
 const eventBtn = document.getElementById("event");
+const box = document.getElementById("box");
+const closeBtn = document.getElementById("close");
 
+box.addEventListener("click", function () {
+  box.remove();
+});
 newFoto.src = "./img/bot.jpg";
 newFoto.alt = "bot";
 newFoto.style.width = "280px";
