@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Validation</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <h1>Form Validation Class</h1>
+
+    <div>
+      <form action="#" name="myForm" id="myForm">
+        <div>
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter Your Name"
+            required
+          />
+             <br>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+          />
+
+          <span id="nameError" style="color: red; display: none"></span>
+        </div>
+
+        <div style="margin-top: 10px">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <div
+        id="successMessage"
+        style="color: green; display: none; margin-top: 10px"
+      ></div>
+    </div>
+
+    <script src="formVal.js"></script>
+  </body>
 </html>
