@@ -19,7 +19,7 @@
 
 // Addition Arithmetic Operators
 
-// Arithmetic are -, +, *, %, ++, --
+// Arithmetic are -, +, *, %, **, /, ++, --
 
 // var addNum = 2 + 3; // Addition
 // let add_Num = 1205 + 5555; // Addition with variables
