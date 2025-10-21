@@ -115,6 +115,30 @@
 // .reduce() 
 
 // console.log(numLength)
+/*
+
+push() - add to end
+
+pop() - remove from end
+
+unshift() - add to beginning
+
+shift() - remove from beginning
+
+indexOf() - find position
+
+includes() - check if exists
+
+sort() - arrange in order
+
+length - get number of items
+indexOf() - find position
+.filter() - filter based on condition
+.map() - transform each item
+.reduce() - combine into single value
+.splice() - add/remove at specific position
+.slice() - extract portion of array
+*/
 
 
 

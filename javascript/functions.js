@@ -50,15 +50,15 @@
 // Closures and Lexical Scope
 // closures gives us access to outer function scope from an inner function
 
-function outside(){
-  let numbers = 0
-  return function inside() {
-    numbers ++;
-    return numbers;
-  }
-}
+// function outside(){
+//   let numbers = 0
+//   return function inside() {
+//     numbers ++;
+//     return numbers;
+//   }
+// }
 
-const reading = outside();
+// const reading = outside();
 
-console.log(reading()); // 1
-console.log(reading()); // 2
+// console.log(reading()); // 1
+// console.log(reading()); // 2

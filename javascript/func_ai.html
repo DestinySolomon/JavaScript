@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Shopping Cart</h1>
+
+    <button onclick="addItem('Apple', 200)">Add Apple ($200)</button> <br /> <br>
+    <button onclick="addItem('Orange', 150)">Add Orange ($150)</button> <br /> <br>
+    <button onclick="addItem('Banana', 100)">Add Banana ($100)</button>
+
+    <h3>Cart Items</h3>
+    <ul id="cartList"></ul>
+
+    <h3>Total: $<span id="total">0</span></h3>
+
+    <button onclick="clearCart()">Clear Cart</button>
+
+    <script src="func_ai.js"></script>
+  </body>
+</html>
