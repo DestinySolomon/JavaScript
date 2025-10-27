@@ -133,12 +133,158 @@ sort() - arrange in order
 
 length - get number of items
 indexOf() - find position
-.filter() - filter based on condition
 .map() - transform each item
+
 .reduce() - combine into single value
 .splice() - add/remove at specific position
 .slice() - extract portion of array
+.filter() - filter based on condition
+
+
+
+
+
+
+
+
+
+1. .reduce() – Combine Into a Single Value
+
+Meaning:
+reduce() is used when you want to take all the items in an array and combine them into one final result.
+You can use it to add numbers, multiply values, or even join strings together.
+
+STRUCTURE:
+array.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, initialValue);
+
+
+
+Think of it like:
+You’re collecting all students’ test scores to get a total score or average.
+
+
+Example:
+
+let scores = [10, 20, 30, 40];
+let total = scores.reduce((sum, score) => sum + score, 0);
+console.log(total); // 100
+
+
+EXAMPLE 2:
+let names = ["Dee", "Max", "Joy"];
+let classList = names.reduce((result, name) => result + ", " + name);
+console.log(classList); // "Dee, Max, Joy"
+
+
+👉 Summary: .reduce() helps you summarize or combine everything into one value.
+
+
+
+2. .splice() – Add or Remove at a Specific Position
+
+Meaning:
+splice() changes (edits) the original array — it can remove, add, or replace elements at any position.
+
+STRUCTURE:
+
+array.splice(startIndex, deleteCount, item1, item2, ...);
+
+
+startIndex → where to start changing
+
+deleteCount → how many items to remove
+
+item1, item2 → (optional) items to add
+
+
+Think of it like:
+You’re editing the class list — removing a student or adding a new one in the middle.
+
+Example:
+
+let students = ["Dee", "Max", "Joy", "Tina"];
+students.splice(1, 2); // removes 2 items starting from index 1
+console.log(students); // ["Dee", "Tina"]
+
+
+EXAMPLE 2:
+
+let students = ["Dee", "Joy", "Tina"];
+students.splice(1, 0, "Max"); // add "Max" at position 1
+console.log(students); // ["Dee", "Max", "Joy", "Tina"]
+
+
+👉 Summary: .splice() is for editing the original list — add, remove, or replace directly.
+
+
+3. .slice() – Extract a Portion of the Array
+
+Meaning:
+slice() is used to copy or extract a part of an array without changing the original one.
+
+STRUCTURE:
+array.slice(startIndex, endIndex);
+startIndex → where to start copying
+
+endIndex → where to stop (not including this index)
+
+Think of it like:
+You’re photocopying a few pages from a textbook — the original stays the same.
+
+Example: Getting a portion of students
+
+let students = ["Dee", "Max", "Joy", "Tina", "Ben"];
+let groupA = students.slice(0, 3); 
+console.log(groupA); // ["Dee", "Max", "Joy"]
+
+EXAMPLE 2: copying the last two students
+
+let students = ["Dee", "Max", "Joy", "Tina", "Ben"];
+let lastTwo = students.slice(-2);
+console.log(lastTwo); // ["Tina", "Ben"]
+
+
+👉 Summary: .slice() is for copying or cutting out part of the array safely — the original stays untouched.
+
+
+4. .filter() – Get Only the Items That Meet a Condition
+
+Meaning:
+filter() creates a new array with only the items that pass a test (condition).
+It doesn’t change the original array.
+
+STRUCTURE:
+array.filter(item => condition);
+item → each element in the array
+condition → a test that returns true or false
+
+
+Think of it like:
+You’re checking students’ scores and selecting only those who passed.
+
+
+Example: Filtering students who passed
+
+let scores = [35, 70, 90, 45, 80];
+let passed = scores.filter(score => score >= 50);
+console.log(passed); // [70, 90, 80]
+
+
+EXAMPLE 2: Filtering names that start with "J"
+
+
+let names = ["John", "Dee", "Jane", "Max"];
+let jNames = names.filter(name => name.startsWith("J"));
+console.log(jNames); // ["John", "Jane"]
+
+
+👉 Summary: .filter() helps you select only what fits your condition — like a sieve that lets only the right things through.
 */
+
+
+
 
 
 
