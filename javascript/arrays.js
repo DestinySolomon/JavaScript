@@ -2,26 +2,23 @@
 
 // console.log(numbers[2])
 //            0          1
-// var cars = ['bmw', 'rolls royce', 
+// var cars = ['bmw', 'rolls royce',
 
 //    2            3
-//  'lamborghini', 'benz', 
+//  'lamborghini', 'benz',
 
 //  4          5         6           7
 //  'porsche', 'audi', 'lexus LFA', "genesis"]
 
-  
-
 // array methods
 
-// 1 .push() - add items at  the back of the array 
+// 1 .push() - add items at  the back of the array
 
 // cars.push('bentley','toyota', 'ferrari')
 
 // numbers.push(15)
 
-
-//2 .pop() - removes an item from the end 
+//2 .pop() - removes an item from the end
 
 // cars.pop()
 // cars.pop()
@@ -30,18 +27,18 @@
 
 // numbers.pop()
 
-// 3 .shift() removes items at the start 
+// 3 .shift() removes items at the start
 
 // cars.shift()
 
 // numbers.shift()
 
-// 4 .length returns the number of items in the array 
+// 4 .length returns the number of items in the array
 
 // console.log(cars.length)
 // console.log(numbers.length)
 
-// 5 .unshift() adds an item at the front of the array 
+// 5 .unshift() adds an item at the front of the array
 
 // cars.unshift('bettle')
 // cars.unshift(200783628)
@@ -49,7 +46,7 @@
 // numbers.unshift('you dey craze?')
 // numbers.unshift(false, null)
 
-// 6 .includes() checks the array for a value or item 
+// 6 .includes() checks the array for a value or item
 
 // console.log(cars.includes('bmw'))
 // console.log(cars.includes('pagani'))
@@ -74,7 +71,7 @@
 
 // let sliced = numbers.slice( 0, 1 )
 
-// let sliced = numbers.slice( 3, 9 ) 
+// let sliced = numbers.slice( 3, 9 )
 
 // let sliced = numbers.slice( 1, 9)
 
@@ -83,14 +80,13 @@
 
 // console.log(sliced)
 
-
-// advance methods 
+// advance methods
 // .map()
 
 // let foods = [ 'sharwama', 'beans', 'garri',
 //    'akara', 'afang', 'chicken' ]
 
-  //  console.log(foods)
+//  console.log(foods)
 
 // let foodLegnth = foods.map( foods => foods.length )
 
@@ -99,20 +95,19 @@
 // let num = [2,3,4,5,6,7,8]
 
 // console.log(num)
- 
+
 // let nums = num.map(num => num * num)
 
 // console.log(nums)
 
-// .filter() removes the values that 
+// .filter() removes the values that
 // do not meet the condition and returns the rest
 
 // let foodsLength = foods.filter(foods => foods.length >= 8)
 
 // let numLength = num.filter(num => num < 6)
 
-
-// .reduce() 
+// .reduce()
 
 // console.log(numLength)
 /*
@@ -283,30 +278,12 @@ console.log(jNames); // ["John", "Jane"]
 👉 Summary: .filter() helps you select only what fits your condition — like a sieve that lets only the right things through.
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // var object = {
 // // key    value
-//   name: 'retun', 
+//   name: 'retun',
 //   class : 'come' }
 
-
-
-
-
 //NEW LECTURES WITH MR ESAINT MJAY
-
 
 // A forEach in JavaScript is a built-in array method that lets you run some code for each element inside an array.
 
@@ -320,57 +297,46 @@ console.log(jNames); // ["John", "Jane"]
 // index → the position of the current item
 // array → the whole array itself
 
-
 // users is the array you already have (with multiple objects).
 // user is just a variable name that represents each item inside the users array while map is looping through it.
-
-
-
-
 
 // So user is not a new variable you defined somewhere else,it is just a temporary placeholder that map gives you for the current item.
 
 let fruits = ["apple", "banana", "mango"];
 
-fruits.forEach(fruit => {
-    console.log(fruit)
-})
+fruits.forEach((fruit) => {
+  console.log(fruit);
+});
 
 // A forEach loop with index
 
 let colours = ["Red", "Green", "Pink"];
 
 colours.forEach((c, i) => {
-    console.log(c + ": " + i)
-})
-
-
+  console.log(c + ": " + i);
+});
 
 // condition inside forEach
 
 let numbers = [1, 2, 3, 4, 5];
 
-
-numbers.forEach(element => {
-    if (element % 2 === 0) {
-        console.log(element + " is even")
-    } else {
-        console.log(element + " is odd")
-    }
+numbers.forEach((element) => {
+  if (element % 2 === 0) {
+    console.log(element + " is even");
+  } else {
+    console.log(element + " is odd");
+  }
 });
-
-
 
 let scores = [45, 56, 78, 84, 95];
 
-
-scores.forEach(score => {
-    if (score >= 70) {
-        console.log('Pass', score)
-    } else {
-        console.log("Fail", score)
-    }
-})
+scores.forEach((score) => {
+  if (score >= 70) {
+    console.log("Pass", score);
+  } else {
+    console.log("Fail", score);
+  }
+});
 
 // MAP OF ARRAY
 
@@ -386,67 +352,57 @@ scores.forEach(score => {
 
 let sum = [1, 2, 3, 4];
 
-let doubled = sum.map(num => num * 2);
+let doubled = sum.map((num) => num * 2);
 
 console.log(doubled); // [2, 4, 6, 8]
 
+// Example 2: Extracting properties from objects
 
+let students = [
+  {
+    name: "Esaint",
+    age: 100,
+    Position: "Javascript Totur",
+  },
+  {
+    name: "Sifon",
+    age: 24,
+    Position: "Accountant",
+  },
+  {
+    name: "Shalom",
+    age: 23,
+    Position: "Social Media Manager",
+  },
+];
 
-// Example 2: Extracting properties from objects 
+let details = students.map((student) => student);
 
-let students =
-    [
-        {
-            "name": "Esaint",
-            "age": 100,
-            "Position": "Javascript Totur",
-        },
-        {
-            "name": "Sifon",
-            "age": 24,
-            "Position": "Accountant",
-        },
-        {
-            "name": "Shalom",
-            "age": 23,
-            "Position": "Social Media Manager",
-        }
-
-    ];
-
-let details = students.map(student => student)
-
-console.log(details)
+console.log(details);
 
 // for each user inside users {
 //     take user.name
 //  }
 
-
 // converting a string with array;
 
+let words = ["javascript"];
 
-let words = ['javascript'];
-
-let uppercase = words.map(word => word.toUpperCase());
+let uppercase = words.map((word) => word.toUpperCase());
 
 console.log(uppercase);
 
+// FILTER MAP
 
-// FILTER MAP 
+const datas = [
+  { name: "Mike", age: 25 },
+  { name: "Sarah", age: 17 },
+  { name: "John", age: 30 },
+];
 
-const datas =
-    [
-        { name: "Mike", age: 25 },
-        { name: "Sarah", age: 17 },
-        { name: "John", age: 30 }
-    ]
+let adult = datas.filter((data) => data.age >= 18);
 
-let adult = datas.filter(data => data.age >= 18);
-
-console.log(adult)
-
-
+console.log(adult);
 
 // Explanation:
 
@@ -461,9 +417,6 @@ console.log(adult)
 // Next item: { name: "Sarah", age: 17 } → condition false → skip it.
 // Next item: { name: "John", age: 30 } → condition true → keep it.
 
-
-
-
 // REDUCE
 //reduce is used when you want to take an array and combine it into a single value (sum, average, object, etc.).
 
@@ -472,8 +425,6 @@ let numbering = [10, 20, 30, 40];
 let total = numbering.reduce((acc, num) => acc + num, 0);
 
 console.log(total);
-
-
 
 // Explanation:
 

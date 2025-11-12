@@ -6,30 +6,30 @@
 // network request
 //interacting with the database
 
-// hello(leave);
-// goodbye();
-// leave( );
+hello(leave);
+goodbye();
+leave( );
 
-// function hello() {
-//   setTimeout(() => {
-//     console.log("Hello");
-//   }, 3000);
-// }
+function hello() {
+  setTimeout(() => {
+    console.log("Hello");
+  }, 3000);
+}
 
-// function hello(callback) {
-//   console.log("hello"); // returns the frontend
-//   callback();
-// }
+function hello(callback) {
+  console.log("hello"); // returns the frontend
+  callback();
+}
 
-// function goodbye() {
-//   console.log("goodbye");
-// }
+function goodbye() {
+  console.log("goodbye");
+}
 
-// function leave() {
-//   setTimeout(() => {
-//     console.log("I will delay for 2 seconds, then fetching result"); // API function
-//   }, 2000);
-// }
+function leave() {
+  setTimeout(() => {
+    console.log("I will delay for 2 seconds, then fetching result"); // API function
+  }, 2000);
+}
 
 // CLASS WORK
 start(albert);
